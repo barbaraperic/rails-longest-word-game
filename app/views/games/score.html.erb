@@ -1,0 +1,23 @@
+<h1>Games#score</h1>
+<p>Find me in app/views/games/score.html.erb</p>
+
+
+<% if @included %>
+  <% if @english_word %>
+    <p><strong>Congratulation!</strong> <%=  @word %> is a valid English word.</p>
+  <% else %>
+    <p>Sorry, <%=  @word %> is a valid English word.</p>
+  <% end %>
+<% else %>
+  <p>Sorry, <%=  @word %> cannot be built.</p>
+<% end %>
+
+<!-- if included
+  if english
+    congrats
+  else
+    no english
+  end
+else
+  not included
+end -->
